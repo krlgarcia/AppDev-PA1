@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    height: 100px;
+    background: darkblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: dimgrey;
+    transition: width 0.1s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    border: 1px solid grey;
+    height: calc(100vh - 200px);
+    align-items: center;
+    justify-content: center;
+}
+
+.content-left {
+    width: 30%;
+}
+
+main h1 {
+    font-size: 50px;
+    color:darkgrey;
+    text-transform: uppercase;
+}
+
+img {
+    width: 300px;
+}
+
+#apple {
+    width: 150px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
